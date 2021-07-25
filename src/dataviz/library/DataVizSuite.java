@@ -1,5 +1,4 @@
-package template.library;
-
+package dataviz.library;
 
 import processing.core.*;
 
@@ -14,61 +13,24 @@ import processing.core.*;
  * @example Hello 
  */
 
-public class HelloLibrary {
+public class DataVizSuite {
 	
 	// myParent is a reference to the parent sketch
 	PApplet myParent;
-
-	int myVariable = 0;
 	
 	public final static String VERSION = "##library.prettyVersion##";
 	
-
-	/**
-	 * a Constructor, usually called in the setup() method in your sketch to
-	 * initialize and start the Library.
-	 * 
-	 * @example Hello
-	 * @param theParent the parent PApplet
-	 */
-	public HelloLibrary(PApplet theParent) {
+	public DataVizSuite(PApplet theParent) {
 		myParent = theParent;
 		welcome();
 	}
 	
-	
+	/* version info etc */
 	private void welcome() {
 		System.out.println("##library.name## ##library.prettyVersion## by ##author##");
 	}
+			
+	/* actual library code */
 	
-	
-	public String sayHello() {
-		return "hello library.";
-	}
-	/**
-	 * return the version of the Library.
-	 * 
-	 * @return String
-	 */
-	public static String version() {
-		return VERSION;
-	}
-
-	/**
-	 * 
-	 * @param theA the width of test
-	 * @param theB the height of test
-	 */
-	public void setVariable(int theA, int theB) {
-		myVariable = theA + theB;
-	}
-
-	/**
-	 * 
-	 * @return int
-	 */
-	public int getVariable() {
-		return myVariable;
-	}
 }
 
