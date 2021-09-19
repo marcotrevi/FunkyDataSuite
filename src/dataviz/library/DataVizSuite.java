@@ -31,6 +31,5 @@ public class DataVizSuite {
 	}
 			
 	/* actual library code */
-	
 }
 
